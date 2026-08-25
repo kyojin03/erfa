@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "lib": ["ES2021"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noEmit": true,
+    "types": ["google-apps-script", "vitest/globals"],
+    "skipLibCheck": true
+  },
+  "include": ["src", "tests", "build.mjs"]
+}

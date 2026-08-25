@@ -1,0 +1,16 @@
+{
+  "name": "@erfa/apps-script",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src tests build.mjs",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.9"
+  }
+}
+
