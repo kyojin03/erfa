@@ -30,4 +30,7 @@ function bootstrapAdmin(email: string, fullName: string): unknown {
   return bootstrap(email, fullName);
 }
 
-Object.assign(globalThis, { doGet, doPost, setupDatabase, bootstrapAdmin });
+// The production bundle keeps implementation code inside an IIFE. Store only
+// intended Apps Script entry points here; build.mjs emits top-level forwarding
+// declarations so Apps Script can discover them in the editor and Web App.
+Object.assign(globalThis, { __erfaEntrypoints: { doGet, doPost, setupDatabase, bootstrapAdmin } });
